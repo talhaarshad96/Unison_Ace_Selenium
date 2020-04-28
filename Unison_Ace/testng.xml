@@ -5,6 +5,7 @@
     <classes>
       <class name="pages.Login_Logout_Page"/>
       <class name="pages.Agent_desk_page"/>
+      <class name="pages.Customer_page"/>
     </classes>
   </test> <!-- Test1 -->
 </suite> <!-- Suite1 -->

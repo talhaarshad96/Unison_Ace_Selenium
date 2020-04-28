@@ -4,29 +4,22 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
 import elements.Agent_desk_element;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import elements.Login_Logout_elements;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static pages.Login_Logout_Page.driver;
 
 public class Agent_desk_page
 {
-	//static WebDriver driver;
+//	static WebDriver driver;
+	static Agent_desk_element agent = new Agent_desk_element();
 
-	@Test
-	public static void Agent_Desktop() throws InterruptedException
+	//@Test
+	public static void forUnitTest_Agent_Module()
 	{
-		
-		//driver.f;
-		//pages.Login_Logout_Page.driver.equals(null);
-		
-		/*WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		//System.setProperty("webdriver.chrome.silentOutput", "true");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -36,25 +29,48 @@ public class Agent_desk_page
 		driver.findElement(TextBox_username).sendKeys("Admin");
 		
 		By Click_Login = By.xpath("//button[@class='ui large fluid button loginBtn']");
-		driver.findElement(Click_Login).sendKeys(Keys.RETURN);*/
-		/////////
+		driver.findElement(Click_Login).sendKeys(Keys.RETURN);
+	}
+	
+	@Test(priority=1)
+	public static void Agent_Desktop() throws InterruptedException
+	{
 		System.out.println("now in agent1");
-		Agent_desk_element ft = new Agent_desk_element();
-		System.out.println("now in agent2");
-		//ft.Click_Agent_Desktop_TAB();
-		ft.Click_Search_Entity();
+		//agent.Click_Agent_Desktop_TAB();
+		agent.Click_Search_Entity();
 		System.out.println("clicked entity");
-		ft.Click_Select_RelationShip_Num();
+		agent.Click_Select_RelationShip_Num();
 		System.out.println("selected relationship num");
-		ft.SearchBox("619");
-		ft.Click_Search_Button();
+		agent.SearchBox("619");
+		agent.Click_Search_Button();
+		//int size = driver.findElements(By.tagName("iframe")).size();
+		//System.out.println(size);
+	
 
 	}
 	
-	@Test
-	public void anotherMethodTest()
+	@Test(priority=2)
+	public static void Agent_Desk_tick_Correct_Qs() throws InterruptedException
 	{
-		System.out.println("checking1");
+		System.out.println("now in Agent_Desk_tick_Correct_Qs");
+		System.out.println("\nfinding radio1");
+		agent.Click_Correct_radio1();
+		System.out.println("clicked radio1");
+		//agent.Click_Correct_radio2();
+		//agent.Click_Correct_radio3();
+		//agent.Click_Correct_radio4();
+		agent.Validate_button();
+		System.out.println("clicked validate");
 	}
-
+	
+	//@Test
+	public static void Agent_Desk_tick_Wrong_Qs() throws InterruptedException
+	{
+		System.out.println("now in Agent_Desk_tick_Wrong_Qs");
+		agent.Click_Wrong_radio1();
+		agent.Click_Wrong_radio2();
+		agent.Click_Wrong_radio3();
+		agent.Click_Wrong_radio4();
+		agent.Validate_button();
+	}
 }

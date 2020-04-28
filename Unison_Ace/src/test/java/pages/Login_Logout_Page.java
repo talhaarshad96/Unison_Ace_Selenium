@@ -14,7 +14,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Login_Logout_Page 
 {
 	public static WebDriver driver;
-	
+
+	static Login_Logout_elements log_in_out = new Login_Logout_elements();
 	
 	@BeforeSuite
 	public void setUpTest() throws InterruptedException
@@ -32,11 +33,10 @@ public class Login_Logout_Page
 		//System.setProperty("webdriver.chrome.driver","E:\\eclipse stuff\\chromedriver.exe"); 
 		//WebDriverWait wait=new WebDriverWait(driver, 30);	
 		Thread.sleep(3000);
-		Login_Logout_elements ft = new Login_Logout_elements();
 
-		ft.TextBox_username("Admin");
-		ft.TextBox_password("");
-		ft.Button_Login();
+		log_in_out.TextBox_username("Admin");
+		log_in_out.TextBox_password("");
+		log_in_out.Button_Login();
 		System.out.println("login is done");
 
 	}
@@ -57,13 +57,11 @@ public class Login_Logout_Page
 	{
 		//System.setProperty("webdriver.chrome.driver","E:\\eclipse stuff\\chromedriver.exe"); 
 		//WebDriverWait wait=new WebDriverWait(driver, 30);	
-
-		Login_Logout_elements ft = new Login_Logout_elements();
 		System.out.println("In AfterTest Now");
 		Thread.sleep(4000);
-		ft.Click_My_Profile();
+		log_in_out.Click_My_Profile();
 		System.out.println("clicking profile");
-		ft.Click_Logout();
+		log_in_out.Click_Logout();
 		System.out.println("clicking logout");
 
 	}
