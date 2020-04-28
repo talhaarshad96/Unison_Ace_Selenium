@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-28T07:42:11 PKT" name="Suite1" finished-at="2020-04-28T07:42:20 PKT" duration-ms="9179">
+    <groups>
+    </groups>
+    <test started-at="2020-04-28T07:42:11 PKT" name="Test1" finished-at="2020-04-28T07:42:20 PKT" duration-ms="9179">
+      <class name="pages.Login_Logout_Page">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:pages.Login_Logout_Page@229d10bd]" started-at="2020-04-28T07:41:48 PKT" name="setUpTest" finished-at="2020-04-28T07:42:11 PKT" duration-ms="22744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:pages.Login_Logout_Page@229d10bd]" started-at="2020-04-28T07:42:11 PKT" name="Login" finished-at="2020-04-28T07:42:14 PKT" duration-ms="3469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="somethi()[pri:0, instance:pages.Login_Logout_Page@229d10bd]" started-at="2020-04-28T07:42:14 PKT" name="somethi" finished-at="2020-04-28T07:42:14 PKT" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- somethi -->
+        <test-method signature="somethi1()[pri:0, instance:pages.Login_Logout_Page@229d10bd]" started-at="2020-04-28T07:42:14 PKT" name="somethi1" finished-at="2020-04-28T07:42:14 PKT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- somethi1 -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:pages.Login_Logout_Page@229d10bd]" started-at="2020-04-28T07:42:15 PKT" name="Logout" finished-at="2020-04-28T07:42:20 PKT" duration-ms="4353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:pages.Login_Logout_Page@229d10bd]" started-at="2020-04-28T07:42:20 PKT" name="tearDownTest" finished-at="2020-04-28T07:42:21 PKT" duration-ms="894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- pages.Login_Logout_Page -->
+      <class name="pages.Agent_desk_page">
+        <test-method signature="Agent_Desktop()[pri:0, instance:pages.Agent_desk_page@47542153]" started-at="2020-04-28T07:42:14 PKT" name="Agent_Desktop" finished-at="2020-04-28T07:42:15 PKT" duration-ms="1236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Agent_Desktop -->
+        <test-method signature="anotherMethodTest()[pri:0, instance:pages.Agent_desk_page@47542153]" started-at="2020-04-28T07:42:15 PKT" name="anotherMethodTest" finished-at="2020-04-28T07:42:15 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- anotherMethodTest -->
+      </class> <!-- pages.Agent_desk_page -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>
