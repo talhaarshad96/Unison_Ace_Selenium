@@ -5,6 +5,7 @@
     <classes>
       <class name="pages.Agent_desk_page">
         <methods>
+          <include name="Agent_Desk_tick_Correct_Qs"/>
           <include name="Agent_Desktop"/>
         </methods>
       </class> <!-- pages.Agent_desk_page -->

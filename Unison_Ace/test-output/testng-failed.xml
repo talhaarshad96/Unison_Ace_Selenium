@@ -5,11 +5,7 @@
     <classes>
       <class name="pages.Agent_desk_page">
         <methods>
-          <include name="Login"/>
-          <include name="setUpTest"/>
-          <include name="Agent_Desktop"/>
-          <include name="tearDownTest"/>
-          <include name="Logout"/>
+          <include name="Agent_Desk_tick_Correct_Qs"/>
         </methods>
       </class> <!-- pages.Agent_desk_page -->
     </classes>
