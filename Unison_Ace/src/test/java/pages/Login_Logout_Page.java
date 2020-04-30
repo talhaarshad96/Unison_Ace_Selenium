@@ -32,7 +32,7 @@ public class Login_Logout_Page
 	{
 		//System.setProperty("webdriver.chrome.driver","E:\\eclipse stuff\\chromedriver.exe"); 
 		//WebDriverWait wait=new WebDriverWait(driver, 30);	
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
 		log_in_out.TextBox_username("Admin");
 		log_in_out.TextBox_password("");
@@ -41,12 +41,12 @@ public class Login_Logout_Page
 
 	}
 	
-	@Test
+	//@Test
 	public static void somethi()
 	{
 		System.out.println("bakwas");
 	}
-	@Test
+	//@Test
 	public static void somethi1()
 	{
 		System.out.println("bakwas1");

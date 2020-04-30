@@ -22,7 +22,17 @@ public class Service_Mngt_page
 	public static void Service_management_Desktop() throws InterruptedException
 	{
 		System.out.println("now in Service_management_Desktop");
-		service.Click_Agent_Desktop_TAB();
+		service.Click_Service_mng_TAB();
 		System.out.println("clicked Click_Agent_Desktop_TAB");
+	}
+	
+	@Test(priority=2)
+	public static void Service_Mng_Add_new() throws InterruptedException
+	{
+		Thread.sleep(3000);
+		service.Click_Service_mng_New();
+		System.out.println("on service new");
+		service.Click_Service_mng_New_close();
+		System.out.println("closes cases");
 	}
 }

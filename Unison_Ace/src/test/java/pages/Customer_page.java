@@ -14,7 +14,7 @@ public class Customer_page
 	@Test(priority=1)
 	public static void Customer_tab() throws InterruptedException
 	{
-		Thread.sleep(500);
+		Thread.sleep(3000);
 		System.out.println("prep to click cust tab");
 		cust.Click_Customer_TAB();
 		System.out.println("clicked cust tab");
@@ -25,12 +25,13 @@ public class Customer_page
 	@Test(priority=2)
 	public static void Cust_Service_Req() throws InterruptedException
 	{
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		System.out.println("trying to click NEW1 ");
 		cust.Click_Cus_Service_req_NEW();
 		System.out.println("Clicked new");
 		cust.Click_Cus_Service_req_NEW_priority_low();
 		System.out.println("Clicked priority");
+		Thread.sleep(3000);
 		cust.Click_Cus_Service_req_NEW_serv_type_curr_Acc_address_upd();
 		System.out.println("Clicked service type_address_upd");
 		Thread.sleep(3000);
@@ -38,6 +39,7 @@ public class Customer_page
 		Thread.sleep(3000);
 		cust.Enter_Cus_Service_req_NEW_Acc_PO_BOX_nos("1234");
 		cust.Enter_Cus_Service_req_NEW_Acc_PO_Mobile_nos("12345");
+		Thread.sleep(3000);
 		cust.Click_Cus_Service_req_NEW_Acc_Hit_SAVE();
 		System.out.println("Clicked SAVE1\n");
 		cust.Click_Cus_Service_req_NEW_close();
@@ -45,7 +47,7 @@ public class Customer_page
 	}
 	
 	@Test(priority=3)
-	public static void Cust_Cases() throws InterruptedException
+	public static void Cust_Cases() throws InterruptedException //work remain in this
 	{
 		System.out.println("entered cust_case");
 		cust.Click_Cases_TAB();
@@ -54,7 +56,9 @@ public class Customer_page
 		System.out.println("trying to click NEW2 ");
 		cust.Click_Cus_Cases_New_NEW();
 		System.out.println("Clicked new2");
+		Thread.sleep(3000);
 		cust.Click_Cus_Cases_New_Acc_card_loan_nos();
+		Thread.sleep(3000);
 		cust.Click_Cus_Cases_New_Acc_Hit_SAVE();
 		System.out.println("Clicked SAVE2");
 		cust.Click_Cus_Cases_New_close();

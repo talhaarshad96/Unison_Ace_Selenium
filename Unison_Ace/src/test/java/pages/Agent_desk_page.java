@@ -42,6 +42,7 @@ public class Agent_desk_page
 		agent.Click_Select_RelationShip_Num();
 		System.out.println("selected relationship num");
 		agent.SearchBox("619");
+		Thread.sleep(3000);
 		agent.Click_Search_Button();
 		//int size = driver.findElements(By.tagName("iframe")).size();
 		//System.out.println(size);

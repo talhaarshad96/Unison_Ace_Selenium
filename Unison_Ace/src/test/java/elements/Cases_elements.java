@@ -21,6 +21,7 @@ public class Cases_elements
 
 	By Click_Cases_TAB = By.xpath("//a[contains(text(),'Cases')]");
 	By Click_Case_New = By.xpath("//button[@class='btnDefault btnBasic']");
+	By Click_Case_New_close =  By.xpath("//i[@class='close icon']");
 
 
 
@@ -32,6 +33,12 @@ public class Cases_elements
 	public void Click_Case_New()
 	{
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Case_New)).click();
+	}
+	
+	public void Click_Case_New_close() throws InterruptedException
+	{
+		Thread.sleep(4000);
+		driver.findElement(Click_Case_New_close).click();
 	}
 
 }

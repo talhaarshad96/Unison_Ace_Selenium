@@ -129,7 +129,7 @@ public class Agent_desk_element
 	{
 		//WebDriverWait wait3 = new WebDriverWait(driver, 10);
 		//wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.body:nth-child(2) div.widget div.container.fullContainer div.widgetOuterDiv div.ui.attached.segment.widget-body:nth-child(2) div.agContentDiv div.ui.doubling.stackable.grid div.two.column.row div.eight.wide.column:nth-child(3) div.ui.segment.summary-field.questionsTable div.agQuestionTable table.ui.celled.padded.table tbody.tbodyAgDesktop:nth-child(2) tr:nth-child(2) td.single.line:nth-child(3) div.ui.fitted.radio.checkbox > label:nth-child(2)")));
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		WebElement myelement = driver.findElement(By.xpath("//tbody[@class='tbodyAgDesktop']//tr[2]//td[3]//div[1]"));
 		
@@ -141,7 +141,7 @@ public class Agent_desk_element
 
 	public void Click_Correct_radio3() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		WebElement myelement = driver.findElement(By.xpath("//tbody[@class='tbodyAgDesktop']//tr[3]//td[3]//div[1]"));
 		
@@ -154,7 +154,7 @@ public class Agent_desk_element
 
 	public void Click_Correct_radio4() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		WebElement myelement = driver.findElement(By.xpath("//tbody[@class='tbodyAgDesktop']//tr[4]//td[3]//div[1]"));
 		
@@ -167,7 +167,7 @@ public class Agent_desk_element
 
 	public void Click_Wrong_radio1() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		WebElement myelement = driver.findElement(By.xpath("//tbody[@class='tbodyAgDesktop']//tr[1]//td[4]//div[1]"));
 		
 		WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -178,7 +178,7 @@ public class Agent_desk_element
 
 	public void Click_Wrong_radio2() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		WebElement myelement = driver.findElement(By.xpath("//tbody[@class='tbodyAgDesktop']//tr[2]//td[4]//div[1]"));
 		
 		WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -189,7 +189,7 @@ public class Agent_desk_element
 
 	public void Click_Wrong_radio3() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		WebElement myelement = driver.findElement(By.xpath("//tbody[@class='tbodyAgDesktop']//tr[3]//td[4]//div[1]"));
 		
 		WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -200,7 +200,7 @@ public class Agent_desk_element
 
 	public void Click_Wrong_radio4() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		WebElement myelement = driver.findElement(By.xpath("//tbody[@class='tbodyAgDesktop']//tr[4]//td[4]//div[1]"));
 		
 		WebDriverWait wait = new WebDriverWait(driver, 20);

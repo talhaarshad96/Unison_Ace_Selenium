@@ -29,9 +29,11 @@ public class Cases_page
 	@Test(priority=2)
 	public static void Case_Add_new() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		cases.Click_Case_New();
 		System.out.println("on case new");
-
+		cases.Click_Case_New_close();
+		System.out.println("closes cases");
 	}
 	
 	

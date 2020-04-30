@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test1">
     <classes>
       <class name="pages.Login_Logout_Page"/>
-     <!-- <class name="pages.Agent_desk_page"/> -->
-     <!-- <class name="pages.Customer_page"/> -->
+      <class name="pages.Agent_desk_page"/> 
+      <class name="pages.Customer_page"/> 
       <class name="pages.Cases_page"/>
       <class name="pages.Service_Mngt_page"/>
     </classes>
