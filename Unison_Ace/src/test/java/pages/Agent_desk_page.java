@@ -53,24 +53,31 @@ public class Agent_desk_page
 	public static void Agent_Desk_tick_Correct_Qs() throws InterruptedException
 	{
 		System.out.println("now in Agent_Desk_tick_Correct_Qs");
-		System.out.println("\nfinding radio1");
 		agent.Click_Correct_radio1();
 		System.out.println("clicked radio1");
-		//agent.Click_Correct_radio2();
-		//agent.Click_Correct_radio3();
-		//agent.Click_Correct_radio4();
+		agent.Click_Correct_radio2();
+		System.out.println("clicked radio2");
+		//Thread.sleep(5000);
+		agent.Click_Correct_radio3();
+		System.out.println("clicked radio3");
+		agent.Click_Correct_radio4();
+		System.out.println("clicked radio4");
 		agent.Validate_button();
-		System.out.println("clicked validate");
+		System.out.println("clicked validate\n");
 	}
 	
-	//@Test
+	//@Test(priority=2)
 	public static void Agent_Desk_tick_Wrong_Qs() throws InterruptedException
 	{
 		System.out.println("now in Agent_Desk_tick_Wrong_Qs");
 		agent.Click_Wrong_radio1();
+		System.out.println("clicked radio1");
 		agent.Click_Wrong_radio2();
+		System.out.println("clicked radio2");
 		agent.Click_Wrong_radio3();
+		System.out.println("clicked radio3");
 		agent.Click_Wrong_radio4();
+		System.out.println("clicked radio4");
 		agent.Validate_button();
 	}
 }

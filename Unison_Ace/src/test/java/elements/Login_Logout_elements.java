@@ -1,6 +1,7 @@
 package elements;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -54,6 +55,21 @@ public class Login_Logout_elements
 	public void Click_Logout()
 	{
 		driver.findElement(Click_Logout).click();
+		/*try {
+			  if(driver.findElement(Click_Logout).isDisplayed()){
+			     //conditions
+				  driver.findElement(Click_Logout).click();
+			  }
+			  else{
+				  WebElement myelement1 = driver.findElement(Click_Logout);
+					JavascriptExecutor jse2 = (JavascriptExecutor)driver;
+					jse2.executeScript("arguments[0].scrollIntoView()", myelement1);
+					myelement1.click();
+			  }
+			} catch (Exception e) {
+			  //log exception
+
+			}*/
 	}
 
 
