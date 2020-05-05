@@ -36,8 +36,7 @@ public class Service_Mngt_elements
 	
 	public void Click_Service_mng_New_close() throws InterruptedException
 	{
-		Thread.sleep(4000);
-		driver.findElement(Click_Service_mng_New_close).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Service_mng_New_close)).click();
 	}
 	
 }

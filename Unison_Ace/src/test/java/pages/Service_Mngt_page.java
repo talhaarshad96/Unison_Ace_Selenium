@@ -29,7 +29,7 @@ public class Service_Mngt_page
 	@Test(priority=2)
 	public static void Service_Mng_Add_new() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		service.Click_Service_mng_New();
 		System.out.println("on service new");
 		service.Click_Service_mng_New_close();

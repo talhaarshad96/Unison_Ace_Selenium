@@ -1,5 +1,9 @@
 package pages;
 
+import static pages.Login_Logout_Page.driver;
+
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -29,10 +33,8 @@ public class Login_Logout_Page
 
 	@BeforeTest
 	public static void Login() throws InterruptedException
-	{
-		//System.setProperty("webdriver.chrome.driver","E:\\eclipse stuff\\chromedriver.exe"); 
-		//WebDriverWait wait=new WebDriverWait(driver, 30);	
-		Thread.sleep(4000);
+	{	
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
 		log_in_out.TextBox_username("Admin");
 		log_in_out.TextBox_password("");
@@ -55,15 +57,12 @@ public class Login_Logout_Page
 	@AfterTest
 	public static void Logout() throws InterruptedException
 	{
-		//System.setProperty("webdriver.chrome.driver","E:\\eclipse stuff\\chromedriver.exe"); 
-		//WebDriverWait wait=new WebDriverWait(driver, 30);	
 		System.out.println("In AfterTest Now");
-		Thread.sleep(4000);
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		log_in_out.Click_My_Profile();
 		System.out.println("clicking profile");
 		log_in_out.Click_Logout();
 		System.out.println("clicking logout");
-
 	}
 
 	@AfterSuite

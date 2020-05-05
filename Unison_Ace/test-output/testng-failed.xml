@@ -3,11 +3,11 @@
 <suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="pages.Cases_page">
+      <class name="pages.Agent_desk_page">
         <methods>
-          <include name="Case_Desktop_tab"/>
+          <include name="Agent_Desk_tick_Correct_Qs"/>
         </methods>
-      </class> <!-- pages.Cases_page -->
+      </class> <!-- pages.Agent_desk_page -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

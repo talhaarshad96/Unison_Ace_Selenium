@@ -7,7 +7,7 @@
       <class name="pages.Agent_desk_page"/> 
       <class name="pages.Customer_page"/> 
       <class name="pages.Cases_page"/>
-      <class name="pages.Service_Mngt_page"/>
+      <class name="pages.Service_Mngt_page"/> 
     </classes>
   </test> <!-- Test1 -->
 </suite> <!-- Suite1 -->

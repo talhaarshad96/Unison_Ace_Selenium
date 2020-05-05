@@ -37,8 +37,7 @@ public class Cases_elements
 	
 	public void Click_Case_New_close() throws InterruptedException
 	{
-		Thread.sleep(4000);
-		driver.findElement(Click_Case_New_close).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Case_New_close)).click();
 	}
 
 }
