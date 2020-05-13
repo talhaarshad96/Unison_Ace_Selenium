@@ -1,6 +1,7 @@
 package elements;
 
 import static pages.Login_Logout_Page.driver;
+import static pages.Login_Logout_Page.actions;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,8 +20,15 @@ public class Customer_elements
 
 	}
 
+
 	By Click_Customer_TAB = By.xpath("//a[contains(text(),'Customers')]");
 	By Click_Cust_RelationShipNum = By.xpath("//a[contains(text(),'619')]");
+	///
+	By Click_Customer_FinancialAccounts = By.xpath("//span[contains(text(),'Financial Accounts')]");
+	By Click_Customer_CustomerLogs = By.xpath("//span[contains(text(),'Customer Logs')]");
+	By Click_Customer_Activity = By.xpath("//span[contains(text(),'Activity')]");
+	By Click_Customer_CustInteractions= By.xpath("//span[contains(text(),'Customer Interactions')]");
+	///
 	By Click_Cus_Service_req_NEW = By.xpath("//button[contains(text(),'New')]");
 	By Click_Cus_Service_req_NEW_close =  By.xpath("//i[@class='close icon']");
 	By Click_Cus_Service_req_NEW_serv_type = By.xpath("//a[@id='rdts1_trigger']");
@@ -37,7 +45,7 @@ public class Customer_elements
 	By Click_Cus_Service_req_NEW_Channel_call_center = By.xpath("//span[contains(text(),'Call Center')]");
 
 	//Cases elements
-	
+
 	By Click_Cases_tab = By.xpath("//a[@class='tabTitle']//span[contains(text(),'Cases')]");
 	By Click_Cus_Cases_New_Acc_card_loan_nos = By.xpath("//div[contains(text(),'AC')]");
 	By Click_Cus_Cases_New_Acc_select_LOAN_nos = By.xpath("//span[contains(text(),'3000309579')]");
@@ -46,15 +54,23 @@ public class Customer_elements
 	By Click_Cus_Cases_New_close =  By.xpath("//i[contains(@class,'close icon')]");
 	By Click_Cus_Cases_New_channel_dropdown =  By.xpath("(//div[@class='column']//div[@class='form-element ']//div[@class='form-control']//div[@class='ui search selection dropdown']//i[@class='dropdown icon'])[2]");
 	By Click_Cus_Cases_New_channel_call_center =  By.xpath("//div[@class='visible menu transition']//span[@class='text'][contains(text(),'Call Center')]");
-	
+
 	By Click_Cus_Cases__NEW_Complaint_type = By.xpath("//*[contains(@id,'_trigger')]");
 	By Click_Cus_Cases__NEW_curr_Acc = By.xpath("//*[contains(@id,'-0-0-0_li')]//i[@class='toggle collapsed']"); //finding partial ID
 	By Click_Cus_Cases__NEW_Amount_on_hold = By.xpath("//input[contains(@id,'-0-0-0-0')]");//finding partial ID
 	By Click_Cus_Cases_New_priority_dropdown = By.xpath("(//div[@class='column']//div[@class='form-element ']//div[@class='form-control']//div[@class='ui search selection dropdown']//i[@class='dropdown icon'])[1]");
 	By Click_Cus_Cases_New_priority_dropdown_low = By.xpath("//span[contains(text(),'Low')]");
 
-	
-	
+	/////Customer-Grid_filters////////
+	By Click_Cus_grid_Filter_FullName_HoverOver = By.xpath("//span[contains(text(),'Full Name')]");
+	By Click_Cus_grid_Filter_FullName_dropdown = By.xpath("//div[@class='ag-header-cell ag-header-cell-sortable ag-column-hover']//span[@class='ag-icon ag-icon-menu']");
+	By Click_Cus_grid_Filter_secondTabFilter = By.xpath("//span[@class='ag-tab']//span[@class='ag-icon ag-icon-filter']");
+	By Click_Cus_grid_Filter_secondTabFilter_enternNAme = By.xpath("//div[@class='ag-filter-body']//input[@placeholder='Filter...']");
+	By Click_Cus_grid_Filter_thirdTabFilter = By.xpath("//span[@class='ag-icon ag-icon-columns']");
+	By Click_Cus_grid_Filter_thirdTabFilter_clickLoginID = By.xpath("//span[@class='ag-column-tool-panel-column-label'][contains(text(),'Login Id')]");
+	//By Click_Cus_grid_Filter_ = By.xpath("//span[contains(text(),'Full Name')]");
+
+
 	public void Click_Customer_TAB()
 	{
 		driver.findElement(Click_Customer_TAB).click();
@@ -64,30 +80,39 @@ public class Customer_elements
 	{
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Cust_RelationShipNum)).click();
 	}
+	////////
+	public void Click_Customer_FinancialAccounts()
+	{
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		WebElement myelement1 = driver.findElement(Click_Customer_FinancialAccounts);
+		JavascriptExecutor jse2 = (JavascriptExecutor)driver;
+		jse2.executeScript("arguments[0].scrollIntoView()", myelement1);
+		myelement1.click();
+	}
+	
+	public void Click_Customer_CustomerLogs()
+	{
+		driver.findElement(Click_Customer_CustomerLogs).click();
+	}
+	
+	public void Click_Customer_Activity()
+	{
+		driver.findElement(Click_Customer_Activity).click();
+	}
+	
+	public void Click_Customer_CustInteractions()
+	{
+		driver.findElement(Click_Customer_CustInteractions).click();
+	}
+	/////
 
 	public void Click_Cus_Service_req_NEW() throws InterruptedException
 	{
-		//driver.findElement(Click_Cus_Service_req_NEW).click();
-		//new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'New')]"))).click();
-
-		/*WebElement element = driver.findElement(By.xpath("//button[@class='btnDefault btnBasic']"));
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();", element);*/
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		WebElement myelement1 = driver.findElement(Click_Cus_Service_req_NEW);
 		JavascriptExecutor jse2 = (JavascriptExecutor)driver;
 		jse2.executeScript("arguments[0].scrollIntoView()", myelement1);
-		//new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(myelement1));
-
 		myelement1.click();
-
-		//WebDriverWait wait3 = new WebDriverWait(driver, 10);
-		//new WebDriverWait(driver, 10).until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.body:nth-child(2) div.widget div.ui.stackable.vertically.divided.grid div.row div.ten.wide.column:nth-child(3) div.container.fullContainer div.widgetOuterDiv div.ui.attached.segment.widget-body:nth-child(2) div.tabCustomerHub div.ui.segment div.tabContainer div.container.fullContainer div.widgetOuterDiv div.ui.attached.segment.widget-body div.accordion.ui.accordionMain div.content.active.expand div.container.fullContainer.accordionWidget div.widgetOuterDiv div.ui.attached.segment.widget-body div.ui.segment div.tabContainer div.container.fullContainer div.widgetOuterDiv div.ui.attached.segment.widget-body div.ui.grid.ListViewHeader div.row div.right.aligned.right.floated.six.wide.column div.ui.mini.one.buttons div.actionBtnMainDiv > button.btnDefault.btnBasic")));
-
-		/*WebElement element = driver.findElement(By.xpath("//button[contains(text(),'New')]")); 
-		Actions actions = new Actions(driver); 
-		actions.moveToElement(element).click().perform();*/
-
 	}
 
 	public void Click_Cus_Service_req_NEW_serv_type_curr_Acc_address_upd()
@@ -102,7 +127,7 @@ public class Customer_elements
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Cus_Service_req_NEW_priority_low)).click();
 		driver.findElement(By.xpath("//div[contains(@class,'visible menu transition')]//div[2]")).click();
 	}
-	
+
 	public void Click_Cus_Service_req_NEW_Channel_field_Call_Center()
 	{
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Cus_Service_req_NEW_Channel_field)).click();
@@ -139,9 +164,9 @@ public class Customer_elements
 	{
 		driver.findElement(Click_Cus_Service_req_NEW_close).click();
 	}
-	
+
 	//////////----------------------------CASES-----------------/////////////////////////
-	
+
 	public void Click_Cases_TAB() throws InterruptedException
 	{
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
@@ -151,7 +176,7 @@ public class Customer_elements
 		jse2.executeScript("arguments[0].scrollIntoView()", myelement1);
 		myelement1.click();
 	}
-	
+
 	public void Click_Cus_Cases_NEW()
 	{
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
@@ -160,7 +185,7 @@ public class Customer_elements
 		jse2.executeScript("arguments[0].scrollIntoView()", myelement1);
 		myelement1.click();
 	}
-	
+
 	public void Click_Cus_Cases_NEW_Complaint_type_Amount_onhold()
 	{
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Cus_Cases__NEW_Complaint_type)).click();
@@ -173,23 +198,30 @@ public class Customer_elements
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Cus_Cases_New_priority_dropdown)).click();
 		driver.findElement(Click_Cus_Cases_New_priority_dropdown_low).click();
 	}
-	
+
 	public void Click_Cus_Cases_NEW_Channel_field_Call_Center()
 	{
+		/*driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		WebElement myelement = driver.findElement(Click_Cus_Cases_New_channel_dropdown);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(myelement));
+		myelement.click();
+		
+		WebElement myelement1 = driver.findElement(Click_Cus_Cases_New_channel_call_center);
+		wait.until(ExpectedConditions.elementToBeClickable(myelement1));
+		myelement.click();*/
+		
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Cus_Cases_New_channel_dropdown)).click();
-		driver.findElement(Click_Cus_Cases_New_channel_call_center).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Cus_Cases_New_channel_call_center)).click();
 	}
-	
+
 	public void Click_Cus_Cases_New_Acc_card_loan_nos()
 	{
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Cus_Cases_New_Acc_card_loan_nos)).click();
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Cus_Cases_New_Acc_select_LOAN_nos)).click();
-
-		//driver.findElement(Click_Cus_Cases_New_Acc_card_loan_nos).click();
-		//driver.findElement(Click_Cus_Cases_New_Acc_select_LOAN_nos).click();
 	}
 
-	
+
 	public void Click_Cus_Cases_New_Acc_Hit_SAVE()
 	{
 		driver.findElement(Click_Cus_Cases_New_Acc_Hit_SAVE).click();
@@ -204,6 +236,47 @@ public class Customer_elements
 	{
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.findElement(Click_Cus_Cases_New_close).click();
+	}
+
+	////////////------Grid Filters--------/////////////////
+
+	public void Click_Cus_grid_Filter_FullName_HoverOver()
+	{
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		actions = new Actions(driver);
+		WebElement hoverFullname = driver.findElement(Click_Cus_grid_Filter_FullName_HoverOver);
+		actions.moveToElement(hoverFullname).perform();
+		System.out.println("Done Mouse hover on 'Rock' from Menu");
+	}
+
+	public void Click_Cus_grid_Filter_FullName_dropdown()
+	{
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.findElement(Click_Cus_grid_Filter_FullName_dropdown).click();
+	}
+
+	public void Click_Cus_grid_Filter_secondTabFilter()
+	{
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.findElement(Click_Cus_grid_Filter_secondTabFilter).click();
+	}
+
+	public void Click_Cus_grid_Filter_secondTabFilter_enternNAme(String text)
+	{
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.findElement(Click_Cus_grid_Filter_secondTabFilter_enternNAme).sendKeys(text);
+	}
+
+	public void Click_Cus_grid_Filter_thirdTabFilter()
+	{
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.findElement(Click_Cus_grid_Filter_thirdTabFilter).click();
+	}
+
+	public void Click_Cus_grid_Filter_thirdTabFilter_clickLoginID()
+	{
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.findElement(Click_Cus_grid_Filter_thirdTabFilter_clickLoginID).click();
 	}
 
 }

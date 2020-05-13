@@ -183,7 +183,7 @@ public class Agent_desk_element
 		//driver.findElement(Click_Correct_radio1).click();
 		//JavascriptExecutor js = (JavascriptExecutor) driver; 
 		//js.executeScript("arguments[0].click();", Click_Correct_radio1);
-		//new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div[1]/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div[3]/div/div/table/tbody/tr[1]/td[3]/div/label"))).click();
+		//new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(""))).click();
 		/*WebElement element = driver.findElement(By.xpath("//tr[1]//td[3]//div[1]//label[1]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", element);
@@ -195,11 +195,11 @@ public class Agent_desk_element
 		jse2.executeScript("arguments[0].scrollIntoView()", myelement); */
 		
 		//WebDriverWait wait3 = new WebDriverWait(driver, 10);
-		//wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.body:nth-child(2) div.widget div.container.fullContainer div.widgetOuterDiv div.ui.attached.segment.widget-body:nth-child(2) div.agContentDiv div.ui.doubling.stackable.grid div.two.column.row div.eight.wide.column:nth-child(3) div.ui.segment.summary-field.questionsTable div.agQuestionTable table.ui.celled.padded.table tbody.tbodyAgDesktop:nth-child(2) tr:nth-child(1) td.single.line:nth-child(3) div.ui.fitted.radio.checkbox > label:nth-child(2)")));
+		//wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("abl > label:nth-child(2)")));
 		
 		//WebDriverWait wait2 = new WebDriverWait(driver, 10);
-		//wait2.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.body:nth-child(2) div.widget div.container.fullContainer div.widgetOuterDiv div.ui.attached.segment.widget-body:nth-child(2) div.agContentDiv div.ui.doubling.stackable.grid div.two.column.row div.eight.wide.column:nth-child(3) div.ui.segment.summary-field.questionsTable div.agQuestionTable table.ui.celled.padded.table tbody.tbodyAgDesktop:nth-child(2) tr:nth-child(1) td.single.line:nth-child(3) div.ui.fitted.radio.checkbox > label:nth-child(2)"))).click();
-		//new WebDriverWait(driver, 20).until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.body:nth-child(2) div.widget div.container.fullContainer div.widgetOuterDiv div.ui.attached.segment.widget-body:nth-child(2) div.agContentDiv div.ui.doubling.stackable.grid div.two.column.row div.eight.wide.column:nth-child(3) div.ui.segment.summary-field.questionsTable div.agQuestionTable table.ui.celled.padded.table tbody.tbodyAgDesktop:nth-child(2) tr:nth-child(1) td.single.line:nth-child(3) div.ui.fitted.radio.checkbox > label:nth-child(2)")));
+		//wait2.until(ExpectedConditions.elementToBeClickable(By.cssSelector(""))).click();
+		//new WebDriverWait(driver, 20).until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("")));
 		
 		///////////////===============================///////////////////////////////////
 	//	WebDriverWait wait = new WebDriverWait(driver, 20);

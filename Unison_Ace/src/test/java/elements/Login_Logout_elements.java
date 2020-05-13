@@ -48,15 +48,26 @@ public class Login_Logout_elements
 	
 	public void Click_My_Profile() throws InterruptedException
 	{
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		//new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(Click_Profile));
+		//new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(Click_Profile));
+
+		//new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(Click_Profile)).click();
+		
+		/*driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		WebElement myelement1 = driver.findElement(Click_Profile);
 		JavascriptExecutor jse2 = (JavascriptExecutor)driver;
 		jse2.executeScript("arguments[0].scrollIntoView()", myelement1);
-		myelement1.click();
+		myelement1.click();*/
+		WebElement element = driver.findElement(Click_Profile);
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", element);
 	}
 	
 	public void Click_Logout()
 	{
-		driver.findElement(Click_Logout).click();
+		WebElement element = driver.findElement(Click_Logout);
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", element);
 	}
+	
 }

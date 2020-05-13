@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -18,7 +19,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Login_Logout_Page 
 {
 	public static WebDriver driver;
-
+	public static Actions actions;
+	
 	static Login_Logout_elements log_in_out = new Login_Logout_elements();
 	
 	@BeforeSuite
@@ -28,7 +30,8 @@ public class Login_Logout_Page
 		System.setProperty("webdriver.chrome.silentOutput", "true");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://unison1.avanzasolutions.com:3000/login");
+		//driver.get("http://unison1.avanzasolutions.com:3000/login");
+		driver.get("http://172.16.0.191:3000/login");
 	}
 
 	@BeforeTest
