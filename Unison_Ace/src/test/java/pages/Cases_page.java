@@ -82,6 +82,7 @@ public class Cases_page
 		cases.Click_Cases_Setting_Columns_Status();
 		cases.Click_Cases_Setting_Columns_Profile();
 	}
+	
 	@Test(priority=6)
 	public static void Cases_FilterFunctions() throws InterruptedException
 	{		
@@ -97,6 +98,12 @@ public class Cases_page
 		cases.Click_Cases_Setting_Filter_addFilter_Value();
 		cases.Click_Cases_Setting_Filter_addFilter_Value_ATMcards();
 		cases.Click_Cases_Setting_Filter_addFilter_Save();
+	}
+	
+	@Test(priority=7)
+	public static void Cases_ClickComplaintNo()
+	{
+		cases.Click_Cases_CompaintTicketNo();
 	}
 
 

@@ -99,4 +99,10 @@ public class Service_Mngt_page
 		service.Click_Service_mng_Setting_Filter_addFilter_Value_ATMcards();
 		service.Click_Service_mng_Setting_Filter_addFilter_Save();
 	}
+	
+	@Test(priority=7)
+	public static void Cases_ClickComplaintNo()
+	{
+		service.Click_Service_mng_RequestNo();
+	}
 }

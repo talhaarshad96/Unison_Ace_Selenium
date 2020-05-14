@@ -65,7 +65,8 @@ public class Service_Mngt_elements
 	By Click_Service_mng_Setting_Filter_addFilter_Value = By.xpath("//div[@name='name']//i[@class='dropdown icon']");
 	By Click_Service_mng_Setting_Filter_addFilter_Value_ATMcards = By.xpath("//span[contains(text(),'ATM Cards')]");
 	By Click_Service_mng_Setting_Filter_addFilter_Save = By.xpath("//button[@class='ui primary button']");
-	////
+	//
+	By Click_Service_mng_RequestNo = By.xpath("//a[contains(text(),'SR000001576')]");
 	
 	
 	public void Click_Service_mng_TAB()
@@ -253,6 +254,11 @@ public class Service_Mngt_elements
 	public void Click_Service_mng_Setting_Filter_addFilter_Save()
 	{
 		driver.findElement(Click_Service_mng_Setting_Filter_addFilter_Save).click();
+	}
+	
+	public void Click_Service_mng_RequestNo()
+	{
+		driver.findElement(Click_Service_mng_RequestNo).click();
 	}
 	
 }

@@ -60,9 +60,8 @@ public class Cases_elements
 	By Click_Cases_Setting_Filter_addFilter_Value = By.xpath("//div[@name='name']//i[@class='dropdown icon']");
 	By Click_Cases_Setting_Filter_addFilter_Value_ATMcards = By.xpath("//span[contains(text(),'ATM Cards')]");
 	By Click_Cases_Setting_Filter_addFilter_Save = By.xpath("//button[@class='ui primary button']");
-
-
 	//
+	By Click_Cases_CompaintTicketNo = By.xpath("//a[contains(text(),'C000001840')]");
 
 	public void Click_Cases_TAB() throws InterruptedException
 	{
@@ -272,5 +271,10 @@ public class Cases_elements
 	public void Click_Cases_Setting_Filter_addFilter_Save()
 	{
 		driver.findElement(Click_Cases_Setting_Filter_addFilter_Save).click();
+	}
+	
+	public void Click_Cases_CompaintTicketNo()
+	{
+		driver.findElement(Click_Cases_CompaintTicketNo).click();
 	}
 }
