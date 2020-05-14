@@ -1,113 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-13T22:28:07 PKT" name="Suite1" finished-at="2020-05-13T22:29:02 PKT" duration-ms="54918">
+  <suite started-at="2020-05-14T16:35:43 PKT" name="Suite1" finished-at="2020-05-14T16:37:23 PKT" duration-ms="100653">
     <groups>
     </groups>
-    <test started-at="2020-05-13T22:28:07 PKT" name="Test1" finished-at="2020-05-13T22:29:02 PKT" duration-ms="54918">
+    <test started-at="2020-05-14T16:35:43 PKT" name="Test1" finished-at="2020-05-14T16:37:23 PKT" duration-ms="100653">
       <class name="pages.Cases_page">
-        <test-method signature="Case_Desktop_tab()[pri:1, instance:pages.Cases_page@794cb805]" started-at="2020-05-13T22:28:32 PKT" name="Case_Desktop_tab" finished-at="2020-05-13T22:28:33 PKT" duration-ms="273" status="PASS">
+        <test-method signature="Case_Desktop_tab()[pri:1, instance:pages.Cases_page@4b5a5ed1]" started-at="2020-05-14T16:36:52 PKT" name="Case_Desktop_tab" finished-at="2020-05-14T16:36:52 PKT" duration-ms="371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Case_Desktop_tab -->
-        <test-method signature="Case_Fill_Add_new()[pri:2, instance:pages.Cases_page@794cb805]" started-at="2020-05-13T22:28:33 PKT" name="Case_Fill_Add_new" finished-at="2020-05-13T22:28:37 PKT" duration-ms="4850" status="PASS">
+        <test-method signature="Case_Fill_Add_new()[pri:2, instance:pages.Cases_page@4b5a5ed1]" started-at="2020-05-14T16:36:52 PKT" name="Case_Fill_Add_new" finished-at="2020-05-14T16:36:57 PKT" duration-ms="5338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Case_Fill_Add_new -->
-        <test-method signature="Cases_List_adding()[pri:3, instance:pages.Cases_page@794cb805]" started-at="2020-05-13T22:28:37 PKT" name="Cases_List_adding" finished-at="2020-05-13T22:28:39 PKT" duration-ms="1172" status="PASS">
+        <test-method signature="Cases_List_adding()[pri:3, instance:pages.Cases_page@4b5a5ed1]" started-at="2020-05-14T16:36:57 PKT" name="Cases_List_adding" finished-at="2020-05-14T16:36:59 PKT" duration-ms="1282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cases_List_adding -->
-        <test-method signature="Cases_List_Delete()[pri:4, instance:pages.Cases_page@794cb805]" started-at="2020-05-13T22:28:39 PKT" name="Cases_List_Delete" finished-at="2020-05-13T22:28:40 PKT" duration-ms="1015" status="PASS">
+        <test-method signature="Cases_List_Delete()[pri:4, instance:pages.Cases_page@4b5a5ed1]" started-at="2020-05-14T16:36:59 PKT" name="Cases_List_Delete" finished-at="2020-05-14T16:37:00 PKT" duration-ms="1057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cases_List_Delete -->
-        <test-method signature="Cases_ColumnFunctions()[pri:5, instance:pages.Cases_page@794cb805]" started-at="2020-05-13T22:28:40 PKT" name="Cases_ColumnFunctions" finished-at="2020-05-13T22:28:41 PKT" duration-ms="1906" status="PASS">
+        <test-method signature="Cases_ColumnFunctions()[pri:5, instance:pages.Cases_page@4b5a5ed1]" started-at="2020-05-14T16:37:00 PKT" name="Cases_ColumnFunctions" finished-at="2020-05-14T16:37:02 PKT" duration-ms="2334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cases_ColumnFunctions -->
-        <test-method signature="Cases_FilterFunctions()[pri:6, instance:pages.Cases_page@794cb805]" started-at="2020-05-13T22:28:41 PKT" name="Cases_FilterFunctions" finished-at="2020-05-13T22:28:46 PKT" duration-ms="4434" status="PASS">
+        <test-method signature="Cases_FilterFunctions()[pri:6, instance:pages.Cases_page@4b5a5ed1]" started-at="2020-05-14T16:37:02 PKT" name="Cases_FilterFunctions" finished-at="2020-05-14T16:37:06 PKT" duration-ms="4500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cases_FilterFunctions -->
+        <test-method signature="Cases_ClickComplaintNo()[pri:7, instance:pages.Cases_page@4b5a5ed1]" started-at="2020-05-14T16:37:06 PKT" name="Cases_ClickComplaintNo" finished-at="2020-05-14T16:37:07 PKT" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cases_ClickComplaintNo -->
       </class> <!-- pages.Cases_page -->
       <class name="pages.Service_Mngt_page">
-        <test-method signature="Service_management_Desktop()[pri:1, instance:pages.Service_Mngt_page@4b5a5ed1]" started-at="2020-05-13T22:28:46 PKT" name="Service_management_Desktop" finished-at="2020-05-13T22:28:46 PKT" duration-ms="225" status="PASS">
+        <test-method signature="Service_management_Desktop()[pri:1, instance:pages.Service_Mngt_page@59d016c9]" started-at="2020-05-14T16:37:07 PKT" name="Service_management_Desktop" finished-at="2020-05-14T16:37:07 PKT" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Service_management_Desktop -->
-        <test-method signature="Service_Mng_Add_new()[pri:2, instance:pages.Service_Mngt_page@4b5a5ed1]" started-at="2020-05-13T22:28:46 PKT" name="Service_Mng_Add_new" finished-at="2020-05-13T22:28:53 PKT" duration-ms="7346" status="PASS">
+        <test-method signature="Service_Mng_Add_new()[pri:2, instance:pages.Service_Mngt_page@59d016c9]" started-at="2020-05-14T16:37:07 PKT" name="Service_Mng_Add_new" finished-at="2020-05-14T16:37:15 PKT" duration-ms="7193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Service_Mng_Add_new -->
-        <test-method signature="Service_Mng_List_adding()[pri:3, instance:pages.Service_Mngt_page@4b5a5ed1]" started-at="2020-05-13T22:28:53 PKT" name="Service_Mng_List_adding" finished-at="2020-05-13T22:28:55 PKT" duration-ms="1211" status="PASS">
+        <test-method signature="Service_Mng_List_adding()[pri:3, instance:pages.Service_Mngt_page@59d016c9]" started-at="2020-05-14T16:37:15 PKT" name="Service_Mng_List_adding" finished-at="2020-05-14T16:37:16 PKT" duration-ms="1155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Service_Mng_List_adding -->
-        <test-method signature="Service_Mng_List_Delete()[pri:4, instance:pages.Service_Mngt_page@4b5a5ed1]" started-at="2020-05-13T22:28:55 PKT" name="Service_Mng_List_Delete" finished-at="2020-05-13T22:28:56 PKT" duration-ms="837" status="PASS">
+        <test-method signature="Service_Mng_List_Delete()[pri:4, instance:pages.Service_Mngt_page@59d016c9]" started-at="2020-05-14T16:37:16 PKT" name="Service_Mng_List_Delete" finished-at="2020-05-14T16:37:17 PKT" duration-ms="904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Service_Mng_List_Delete -->
-        <test-method signature="service_ColumnFunctions()[pri:5, instance:pages.Service_Mngt_page@4b5a5ed1]" started-at="2020-05-13T22:28:56 PKT" name="service_ColumnFunctions" finished-at="2020-05-13T22:28:57 PKT" duration-ms="1474" status="PASS">
+        <test-method signature="service_ColumnFunctions()[pri:5, instance:pages.Service_Mngt_page@59d016c9]" started-at="2020-05-14T16:37:17 PKT" name="service_ColumnFunctions" finished-at="2020-05-14T16:37:18 PKT" duration-ms="1574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- service_ColumnFunctions -->
-        <test-method signature="service_FilterFunctions()[pri:6, instance:pages.Service_Mngt_page@4b5a5ed1]" started-at="2020-05-13T22:28:57 PKT" name="service_FilterFunctions" finished-at="2020-05-13T22:29:02 PKT" duration-ms="4605" status="PASS">
+        <test-method signature="service_FilterFunctions()[pri:6, instance:pages.Service_Mngt_page@59d016c9]" started-at="2020-05-14T16:37:18 PKT" name="service_FilterFunctions" finished-at="2020-05-14T16:37:23 PKT" duration-ms="4570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- service_FilterFunctions -->
+        <test-method signature="Cases_ClickComplaintNo()[pri:7, instance:pages.Service_Mngt_page@59d016c9]" started-at="2020-05-14T16:37:23 PKT" name="Cases_ClickComplaintNo" finished-at="2020-05-14T16:37:23 PKT" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cases_ClickComplaintNo -->
       </class> <!-- pages.Service_Mngt_page -->
       <class name="pages.Login_Logout_Page">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:pages.Login_Logout_Page@5ccddd20]" started-at="2020-05-13T22:27:38 PKT" name="setUpTest" finished-at="2020-05-13T22:28:07 PKT" duration-ms="28928" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:pages.Login_Logout_Page@1ed1993a]" started-at="2020-05-14T16:35:08 PKT" name="setUpTest" finished-at="2020-05-14T16:35:43 PKT" duration-ms="34451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:pages.Login_Logout_Page@5ccddd20]" started-at="2020-05-13T22:28:07 PKT" name="Login" finished-at="2020-05-13T22:28:07 PKT" duration-ms="394" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:pages.Login_Logout_Page@1ed1993a]" started-at="2020-05-14T16:35:43 PKT" name="Login" finished-at="2020-05-14T16:35:43 PKT" duration-ms="599" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:pages.Login_Logout_Page@5ccddd20]" started-at="2020-05-13T22:29:02 PKT" name="Logout" finished-at="2020-05-13T22:29:02 PKT" duration-ms="295" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:pages.Login_Logout_Page@1ed1993a]" started-at="2020-05-14T16:37:23 PKT" name="Logout" finished-at="2020-05-14T16:37:23 PKT" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:pages.Login_Logout_Page@5ccddd20]" started-at="2020-05-13T22:29:02 PKT" name="tearDownTest" finished-at="2020-05-13T22:29:03 PKT" duration-ms="831" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:pages.Login_Logout_Page@1ed1993a]" started-at="2020-05-14T16:37:23 PKT" name="tearDownTest" finished-at="2020-05-14T16:37:24 PKT" duration-ms="805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- pages.Login_Logout_Page -->
       <class name="pages.Agent_desk_page">
-        <test-method signature="Agent_Desktop()[pri:1, instance:pages.Agent_desk_page@1ed1993a]" started-at="2020-05-13T22:28:07 PKT" name="Agent_Desktop" finished-at="2020-05-13T22:28:09 PKT" duration-ms="1092" status="PASS">
+        <test-method signature="Agent_Desktop()[pri:1, instance:pages.Agent_desk_page@1f3f4916]" started-at="2020-05-14T16:35:43 PKT" name="Agent_Desktop" finished-at="2020-05-14T16:35:45 PKT" duration-ms="1145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Agent_Desktop -->
-        <test-method signature="Enter_Caution_Message()[pri:2, instance:pages.Agent_desk_page@1ed1993a]" started-at="2020-05-13T22:28:09 PKT" name="Enter_Caution_Message" finished-at="2020-05-13T22:28:09 PKT" duration-ms="639" status="PASS">
+        <test-method signature="Enter_Caution_Message()[pri:2, instance:pages.Agent_desk_page@1f3f4916]" started-at="2020-05-14T16:35:45 PKT" name="Enter_Caution_Message" finished-at="2020-05-14T16:35:45 PKT" duration-ms="606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Enter_Caution_Message -->
-        <test-method signature="Agent_Desk_tick_Correct_Qs()[pri:3, instance:pages.Agent_desk_page@1ed1993a]" started-at="2020-05-13T22:28:09 PKT" name="Agent_Desk_tick_Correct_Qs" finished-at="2020-05-13T22:28:10 PKT" duration-ms="863" status="PASS">
+        <test-method signature="Agent_Desk_tick_Correct_Qs()[pri:3, instance:pages.Agent_desk_page@1f3f4916]" started-at="2020-05-14T16:35:45 PKT" name="Agent_Desk_tick_Correct_Qs" finished-at="2020-05-14T16:35:46 PKT" duration-ms="899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Agent_Desk_tick_Correct_Qs -->
-        <test-method signature="Agent_Desk_Session_box()[pri:4, instance:pages.Agent_desk_page@1ed1993a]" started-at="2020-05-13T22:28:10 PKT" name="Agent_Desk_Session_box" finished-at="2020-05-13T22:28:12 PKT" duration-ms="2373" status="PASS">
+        <test-method signature="Agent_Desk_Session_box()[pri:4, instance:pages.Agent_desk_page@1f3f4916]" started-at="2020-05-14T16:35:46 PKT" name="Agent_Desk_Session_box" finished-at="2020-05-14T16:35:49 PKT" duration-ms="2608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Agent_Desk_Session_box -->
       </class> <!-- pages.Agent_desk_page -->
       <class name="pages.Customer_page">
-        <test-method signature="Customer_tab()[pri:1, instance:pages.Customer_page@1f3f4916]" started-at="2020-05-13T22:28:12 PKT" name="Customer_tab" finished-at="2020-05-13T22:28:18 PKT" duration-ms="5517" status="PASS">
+        <test-method signature="Customer_tab()[pri:1, instance:pages.Customer_page@794cb805]" started-at="2020-05-14T16:35:49 PKT" name="Customer_tab" finished-at="2020-05-14T16:36:00 PKT" duration-ms="10874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Customer_tab -->
-        <test-method signature="Cust_Service_Req()[pri:2, instance:pages.Customer_page@1f3f4916]" started-at="2020-05-13T22:28:18 PKT" name="Cust_Service_Req" finished-at="2020-05-13T22:28:22 PKT" duration-ms="3852" status="PASS">
+        <test-method signature="Cust_Service_Req()[pri:2, instance:pages.Customer_page@794cb805]" started-at="2020-05-14T16:36:00 PKT" name="Cust_Service_Req" finished-at="2020-05-14T16:36:41 PKT" duration-ms="40956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cust_Service_Req -->
-        <test-method signature="Cust_Cases()[pri:3, instance:pages.Customer_page@1f3f4916]" started-at="2020-05-13T22:28:22 PKT" name="Cust_Cases" finished-at="2020-05-13T22:28:25 PKT" duration-ms="3051" status="PASS">
+        <test-method signature="Cust_Cases()[pri:3, instance:pages.Customer_page@794cb805]" started-at="2020-05-14T16:36:41 PKT" name="Cust_Cases" finished-at="2020-05-14T16:36:44 PKT" duration-ms="3353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cust_Cases -->
-        <test-method signature="Cust_GridFilters()[pri:4, instance:pages.Customer_page@1f3f4916]" started-at="2020-05-13T22:28:25 PKT" name="Cust_GridFilters" finished-at="2020-05-13T22:28:32 PKT" duration-ms="7358" status="PASS">
+        <test-method signature="Cust_GridFilters()[pri:4, instance:pages.Customer_page@794cb805]" started-at="2020-05-14T16:36:44 PKT" name="Cust_GridFilters" finished-at="2020-05-14T16:36:52 PKT" duration-ms="7677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cust_GridFilters -->
